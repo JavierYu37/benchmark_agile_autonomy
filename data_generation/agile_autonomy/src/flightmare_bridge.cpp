@@ -92,7 +92,7 @@ FlightmareBridge::FlightmareBridge(const ros::NodeHandle& nh,
     // please open the Unity3D standalone.
     double time_out_count = 0;
     double sleep_useconds = 1.0 * 1e5;
-    const double connection_time_out = 99.0;  // seconds
+    const double connection_time_out = 1000.0;  // seconds
     while (!flightmare_ready_ && ros::ok()) {
       if (flightmareBridge_ptr_ != nullptr) {
         // connect unity
